@@ -1,0 +1,15 @@
+﻿@page
+@model List<Cocktail>
+
+<h1>Cocktails</h1>
+
+<ul>
+    @foreach (var cocktail in Model)
+    {
+        <li>
+            <h2>@cocktail.Name</h2>
+            <p>@cocktail.Ingredients</p>
+            <p>@cocktail.Description</p>
+        </li>
+    }
+</ul>
